@@ -19,7 +19,7 @@ public class ProductDTO implements Serializable {
 
 	private Long id;
 	
-	//Anotar o DTO com os Bean Validation, e depois anotar no Resource com @Valid
+	//Anotar o DTO com os Bean Validation, e depois anotar no Resource com @Valid na frente do parametro
 	
 	@Size(min = 5, max = 60, message = "Deve ter entre 5 e 60 caracteres")
 	@NotBlank(message = "Campo requerido")
